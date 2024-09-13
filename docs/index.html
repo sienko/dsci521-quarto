@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DSCI Test Website</title>
+<title>DSCI Quatro Website – DSCI Test Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -115,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DSCI Test Website</h1>
+<h1 class="title">DSCI Quatro Website</h1>
 </div>
 
 
@@ -132,8 +161,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>This is a Quarto website that I made for my lab for DSCI 521.</p>
+<p>In case you come here and you are NOT from the MDS course at UBC, you could be lost or maybe you are one big curious cat!</p>
+<p>Hello, I’m Sienko! Most people think I am from planet Earth, but I am only came here a few years ago disguised as a cute baby. In actual fact, I am from a tranquil planet that is millions of lightyears away from here. Here on Earth, I’m trying to speak your languages. Most recently, I am aiming to be fluent in <em>Python</em> (do you think whoever came up with the name hated or liked the snake?) and <em>R</em> (this one was invented by someone who hates typing…although, since R is always written in uppercase - it must be boring when you have to keep using Shift to type the name?).</p>
+<p>How could I forget that I am also learning cool stuff like this formula?</p>
+<p><span class="math display">\[
+\log \bigg[ \frac{p(X)}{1 - p(X)} \bigg] = \beta_0 + \beta_1 X
+\]</span></p>
 
 
 

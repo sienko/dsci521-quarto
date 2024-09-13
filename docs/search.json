@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "DSCI Test Website",
+    "title": "DSCI Quatro Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website that I made for my lab for DSCI 521.\nIn case you come here and you are NOT from the MDS course at UBC, you could be lost or maybe you are one big curious cat!\nHello, I’m Sienko! Most people think I am from planet Earth, but I am only came here a few years ago disguised as a cute baby. In actual fact, I am from a tranquil planet that is millions of lightyears away from here. Here on Earth, I’m trying to speak your languages. Most recently, I am aiming to be fluent in Python (do you think whoever came up with the name hated or liked the snake?) and R (this one was invented by someone who hates typing…although, since R is always written in uppercase - it must be boring when you have to keep using Shift to type the name?).\nHow could I forget that I am also learning cool stuff like this formula?\n\\[\n\\log \\bigg[ \\frac{p(X)}{1 - p(X)} \\bigg] = \\beta_0 + \\beta_1 X\n\\]"
   },
   {
     "objectID": "about.html",

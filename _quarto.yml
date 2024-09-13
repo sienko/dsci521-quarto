@@ -1,9 +1,8 @@
 project:
   type: website
-  output-dir: docs/
 
 website:
-  title: "DSCI Test Website"
+  title: "DSCI Lab Website"
   navbar:
     left:
       - href: index.qmd
@@ -12,7 +11,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: cerulean
     css: styles.css
     toc: true
 
